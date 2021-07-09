@@ -1,0 +1,21 @@
+---
+title: Posts
+layout: layouts/home.njk
+permalink: /posts/
+---
+<h1 class="posts-title">Posts</h1>
+
+{% set postsList = collections.posts %}
+
+{% if postsList.length %}
+<ul class="posts-list">
+{% for post in postsList | reverse %}
+  <li class="post">
+    <a class="post-link" href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+    <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p class="no-posts">No posts yet...</p>
+{% endif %}

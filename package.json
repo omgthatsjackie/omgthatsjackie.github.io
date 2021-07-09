@@ -1,0 +1,28 @@
+{
+  "name": "omgthatsjackie.github.io",
+  "version": "1.0.0",
+  "description": "This is my personal (blog?) website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm:watch\" \"npm:serve\"",
+    "build": "cross-env NODE_ENV=production npx gulp && cross-env NODE_ENV=production npx @11ty/eleventy",
+    "watch": "npx gulp watch",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "author": "Yakov Danilichev",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "luxon": "^1.27.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "del": "^2.2.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
+  }
+}

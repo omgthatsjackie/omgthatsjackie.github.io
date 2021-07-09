@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} / {{ metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="alternate" href="{{ metadata.feed }}" type="application/atom+xml" title="{{ metadata.title }}">
+</head>
+<body>
+  <div class="container">
+    {% include "partials/header.njk" %}
+
+    <main class="main">
+      {{ content | safe }}
+    </main>
+
+    {% include "partials/footer.njk" %}
+  </div>
+</body>
+</html>

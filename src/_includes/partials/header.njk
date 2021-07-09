@@ -1,0 +1,7 @@
+<header class="header">
+  <a class="logo" href="/">{{ metadata.title }}</a>
+  <nav class="nav">
+    <a class="nav-link {% if page.url == "/" %} active {% endif %}" href="/">Home</a>
+    <a class="nav-link {% if "/posts/" in page.url %} active {% endif %}" href="/posts/">Posts</a>
+  </nav>
+</header>
