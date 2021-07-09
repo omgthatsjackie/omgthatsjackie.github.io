@@ -201,6 +201,10 @@ h1 {
     &::after {
       top: 100%;
     }
+
+    &:hover::after {
+      top: 100%;
+    }
   }
 
   .main {
