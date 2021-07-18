@@ -2,7 +2,7 @@
   "name": "omgthatsjackie.github.io",
   "version": "1.0.0",
   "description": "This is my personal (blog?) website.",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
     "start": "concurrently \"npm:watch\" \"npm:serve\"",
     "build": "cross-env NODE_ENV=production npx gulp && cross-env NODE_ENV=production npx @11ty/eleventy",
@@ -10,7 +10,7 @@
     "serve": "npx @11ty/eleventy --serve"
   },
   "author": "Yakov Danilichev",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
