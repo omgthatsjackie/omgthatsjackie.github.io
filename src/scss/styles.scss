@@ -42,10 +42,10 @@ h1 {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 90%;
+    top: 100%;
     left: -2px;
     right: -2px;
-    bottom: 0;
+    bottom: -10%;
     background-color: mediumaquamarine;
     opacity: 0.5;
     transition: 0.2s cubic-bezier(0, 0.8, 0.13, 1);
@@ -129,17 +129,32 @@ h1 {
   font-weight: 300;
 }
 
+.post-title {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
 .post-date {
   @include mixins.text;
-  color: gray;
+  color: #afafaf;
 }
 
 .post-link {
   @include mixins.text;
+  font-weight: 400;
+  margin-right: 10px;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+.posts-title {
+  font-size: 35px;
+}
+
+::selection {
+  background-color: rgba(102, 205, 170, 0.5);
 }
 
 .article {
