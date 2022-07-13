@@ -8,10 +8,19 @@
   <meta name="description" content="This is the personal website of Yakov Danilichev.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/styles.css" type="text/css">
   <link rel="alternate" href="feed.xml" type="application/atom+xml" title="omgthatsjackie">
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']]
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <div class="container">
@@ -29,7 +38,14 @@
 
 
 
-<p class="no-posts">No posts yet...</p>
+<ul class="posts-list">
+
+  <li class="post">
+    <a class="post-link" href="/posts/sunrise-problem/" class="postlist-link">Вокруг задачи о восходе солнца</a>
+    <time class="post-date" datetime="2022-07-13">13 Jul 2022</time>
+  </li>
+
+</ul>
 
 
     </main>
