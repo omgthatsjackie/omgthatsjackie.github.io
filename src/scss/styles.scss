@@ -49,10 +49,10 @@ h3 {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 100%;
+    top: 70%;
     left: -0.1rem;
     right: -0.1rem;
-    bottom: -15%;
+    bottom: 0;
     background-color: mediumaquamarine;
     opacity: 0.5;
     transition: 0.2s cubic-bezier(0, 0.8, 0.13, 1);
@@ -111,7 +111,7 @@ h3 {
 
     .info {
       @include mixins.text;
-      margin-right: 2rem;
+      margin-right: 5rem;
 
       h1 {
         font-size: 2.5rem;
